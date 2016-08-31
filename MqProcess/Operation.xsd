@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="OperFx">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="campos">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element type="xs:string" name="origen" />
+							<xs:element type="xs:string" name="opfParMonedas" />
+							<xs:element type="xs:string" name="opfTipoProducto" />
+							<xs:element type="xs:string" name="opfCanalTrx" />
+							<xs:element type="xs:string" name="opfMedioTrx" />
+							<xs:element type="xs:string" name="opfUsuario" />
+							<xs:element type="xs:int" name="opfNumeroOpFindur" />
+							<xs:element type="xs:int" name="opfCodSucOrigen" />
+							<xs:element type="xs:string" name="opfRutCliente" />
+							<xs:element type="xs:int" name="opfSecuenciaCliente" />
+							<xs:element type="xs:string" name="opfTipoCliente" />
+							<xs:element type="xs:string" name="opfNombreCliente" />
+							<xs:element type="xs:string" name="opfMonedaCompra" />
+							<xs:element type="xs:string" name="opfMonedaVenta" />
+							<xs:element type="xs:double" name="opfMontoCompra" />
+							<xs:element type="xs:double" name="opfMontoVenta" />
+							<xs:element type="xs:int" name="opfEquivMontoCompraCLP" />
+							<xs:element type="xs:int" name="opfEquivMontoVentaCLP" />
+							<xs:element type="xs:double" name="opfTCCierreUSD" />
+							<xs:element type="xs:double" name="opfParCierreUSDME" />
+							<xs:element type="xs:double" name="opfCostoFondoUSD" />
+							<xs:element type="xs:double" name="opfParCostoFondoUSDME" />
+							<xs:element type="xs:double" name="opfPrecioCliente" />
+							<xs:element type="xs:double" name="opfPrecioCosto" />
+							<xs:element type="xs:string" name="opfFPagoCompra" />
+							<xs:element type="xs:string" name="opfFPagoVenta" />
+							<xs:element type="xs:string" name="opfValutaCompra" />
+							<xs:element type="xs:string" name="opfValutaVenta" />
+							<xs:element type="xs:string" name="opfIndTipoOp" />
+							<xs:element type="xs:string" name="opfNumPasaporte" />
+							<xs:element type="xs:string" name="opfPaisPago" />
+							<xs:element type="xs:string" name="opfIndicadorFX" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="origen">
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="xs:string">
+								<xs:attribute type="xs:string" name="fecha" />
+								<xs:attribute type="xs:string" name="hora" />
+								<xs:attribute type="xs:string" name="sistema" />
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+
