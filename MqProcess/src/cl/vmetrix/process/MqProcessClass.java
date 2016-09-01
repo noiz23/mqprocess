@@ -107,8 +107,6 @@ public class MqProcessClass {
 				byte[] b = new byte[message.getMessageLength()];
 				message.readFully(b);
 				stringToDom(new String(b,"ISO_8859_1"));
-//				System.out.println("XML: "+ new String(b,"ISO_8859_1"));
-
 				message.clearMessage();
 			} catch (IOException e) {
 				logger.error("IOException during GET: " + e.getMessage());
